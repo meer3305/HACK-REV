@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocal Truth </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>🔍 Vocal Truth</h1>
+    </header>
+    <main>
+      <p class="description">
+        Upload or record audio to detect if it’s human or AI-generated.
+      </p>
+      <div id="actions">
+        <button id="upload-audio" class="btn">🎵 Upload Audio</button>
+        <button id="record-audio" class="btn">🎤 Record Audio</button>
+      </div>
+      <input type="file" id="audio-input" accept="audio/*" style="display:none;">
+      <p id="status" class="status">Awaiting input...</p>
+      <div id="result" class="hidden">
+        <h3>🧠 Analysis Results</h3>
+        <p id="trust-score" class="result-text">Trust Score: -</p>
+        <p id="classification" class="result-text">Classification: -</p>
+      </div>
+    </main>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
